@@ -76,3 +76,31 @@ addProduct(newProduct)
 console.log(products.length)
 
 console.log(products[products.length - 1].name)
+
+function getProductPrice(product) {
+  return product.price
+}
+
+const price = getProductPrice(products[2])
+console.log(price)
+
+function getProductLabel(product) {
+  return `${product.name} -  ${product.price} pln`
+}
+
+const label = getProductLabel(products[1])
+console.log(label)
+
+function getProductCategory(product) {
+  return product.category
+}
+
+const category = getProductCategory(products[4])
+console.log(category)
+
+function getProductInfo(product) {
+  return `${product.name} | ${product.category} | ${product.price} PLN`
+}
+
+const info = getProductInfo(products[0])
+console.log(info)
