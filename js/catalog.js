@@ -77,19 +77,19 @@ console.log(products.length)
 
 console.log(products[products.length - 1].name)
 
-function getProductPrice(product) {
-  return product.price
-}
+// function getProductPrice(product) {
+//   return product.price
+// }
 
-const price = getProductPrice(products[2])
-console.log(price)
+// const price = getProductPrice(products[2])
+// console.log(price)
 
-function getProductLabel(product) {
-  return `${product.name} -  ${product.price} pln`
-}
+// function getProductLabel(product) {
+//   return `${product.name} -  ${product.price} pln`
+// }
 
-const label = getProductLabel(products[1])
-console.log(label)
+// const label = getProductLabel(products[1])
+// console.log(label)
 
 function getProductCategory(product) {
   return product.category
@@ -98,9 +98,21 @@ function getProductCategory(product) {
 const category = getProductCategory(products[4])
 console.log(category)
 
-function getProductInfo(product) {
-  return `${product.name} | ${product.category} | ${product.price} PLN`
-}
+// function getProductInfo(product) {
+//   return `${product.name} | ${product.category} | ${product.price} PLN`
+// }
 
-const info = getProductInfo(products[0])
-console.log(info)
+// const info = getProductInfo(products[0])
+// console.log(info)
+
+// const getProductPrice = (product) => {
+//   return product.price;
+// }
+
+// const getProductName = (product) => {
+//   return product.name;
+// }
+
+const getProductPrice = (product) => product.price;
+
+const getProductLabel = (product) => `${product.name} - ${product.price} PLN`;
