@@ -116,3 +116,50 @@ console.log(category)
 const getProductPrice = (product) => product.price;
 
 const getProductLabel = (product) => `${product.name} - ${product.price} PLN`;
+
+const productNames = products.map((product) => {
+  return product.name
+});
+
+console.log(productNames)
+
+const productLabels = products.map((product) => {
+  return `${product.name} - ${product.price} PLN`
+});
+
+console.log(productLabels)
+
+const productPrices = products.map(
+  (product) => product.price
+);
+
+console.log(productPrices)
+
+const activeProducts = products.filter((product) => {
+  return product.isActive === true
+});
+
+console.log(activeProducts)
+
+const expensiveProducts = products.filter((product) => {
+  return product.price > 15000
+});
+
+console.log(expensiveProducts)
+
+const millingProducts = products.filter((product) => {
+  return product.category === "frezarka"
+});
+
+console.log(millingProducts)
+
+const activeMillingProducts = products.filter((product) => {
+  return (
+    product.category === "frezarka"
+    &&
+    product.isActive === true
+  );
+});
+
+console.log(activeMillingProducts);
+
