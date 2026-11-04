@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalog System</title>
+</head>
+
+<header>
+  <div>
+    <span>LEAN SYSTEMS</span>
+    <span>Catalog System</span>
+    <span>v0.1</span>
+  </div>
+</header>
+
+<main>
+
+  <h1>Katalog usług</h1>
+  <p>Zarządzanie ofertą firmy</p>
+  <input type="search" id="serviceSearch" placeholder="Szukaj usługi...">
+
+  <select id="categoryFilter">
+    <option value="Wszystkie kategorie">Kategoria</option>
+    <option value="CNC">CNC</option>
+    <option value="Spawanie">Spawanie</option>
+    <option value="Montaż">Montaż</option>
+    <option value="Serwis">Serwis</option>
+  </select>
+
+  <select id="statusFilter">
+    <option value="Wszystkie">Filter</option>
+    <option value="Aktywne">Aktywne</option>
+    <option value="Nieaktywne">Nieaktywne</option>
+  </select>
+
+  <section>
+    <h2>Lista usług</h2>
+    <p id="servicesCount">Znaleziono usług: 0</p>
+    <div id="servicesGrid">
+
+      <article>
+
+        <span>CNC</span>
+        <h3>Frezowanie CNC</h3>
+        <p>Precyzyjna obróbka elementów na maszynach CNC</p>
+        <span>Aktywna</span>
+      </article>
+
+    </div>
+  </section>
+</main>
+
+<body>
+
+</body>
+
+</html>
